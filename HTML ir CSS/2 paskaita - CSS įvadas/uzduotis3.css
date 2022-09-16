@@ -1,0 +1,19 @@
+.zaliasTekstas{
+    color:green;
+}
+.centruotasTekstas{
+    text-align: center;
+}
+.raudonasTekstas{
+    color:red;
+}
+.melynasTekstas{
+    color:blue
+}
+.inlineBlock{
+    display:inline-block;
+    text-align: center;
+}
+.islandijaImg{
+    width: 200px;
+}

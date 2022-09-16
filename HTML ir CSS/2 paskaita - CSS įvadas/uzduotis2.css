@@ -1,0 +1,21 @@
+.melynasTekstas{
+    color:blue;
+}
+.nerikiuotasSarasasBruksneliuZymetas{
+    list-style-type: "- ";
+    padding-inline-start: 15px
+}
+.rikiuotasSarasas{
+    padding-inline-start: 15px
+}
+.islandijaImg{
+    width: 200px;
+}
+.inlineBlock{
+    display:inline-block;
+    text-align: center;
+}
+.centruotasTekstasBeMargin{
+    margin: 0;
+    text-align: center;
+}

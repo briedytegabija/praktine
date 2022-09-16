@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>2 paskaita - CCS įvadas </title>
+        <style>
+            p{
+                font-weight: bold;
+                color:rgb(0, 0, 124);
+            }
+            #sugalvotas_id_pavadinimas{
+                line-height: 30px;
+                color:brown;
+            }
+                .sugalvotas_klases_pavadinimas{
+                    border:3px solid purple;
+                    border-radius: 10%;
+            }
+        </style>
+        <link href="./main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div style="font-family: monospace;"> <!-- Inline CSS -->
+            <h1>Inline CSS - Linijinis CSS</h1>
+            <p style="color:rgb(21, 255, 0); font-size: 20px; background-color:aqua">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, explicabo.
+            </p>
+            <p style="color:coral">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, assumenda!
+            </p>
+            <p>
+                Linijinis stilizavimas naudojamas, kai norima ant greitųjų pastilizuoti arba testuotis stilius 
+            </p>
+        </div>
+        <div> <!-- Internal CSS-->
+            <h1>Internal CSS - Vidinis CSS</h1>
+            <p id="sugalvotas_id_pavadinimas">
+                Vienas ID turi būti priskirtas vienam elementui. 
+                Vienas elementas gali turėti tik vieną ID.
+            </p>
+            <p class="sugalvotas_klases_pavadinimas">
+                Viena klasė gali būti priskirta daugeliui elementų.
+                Vienas elementas gali turėti daugelį klasių. 
+                Vidinis stilizavimas naudojamas kai norima ant greitųjų pastilizuoti
+                arba testuotis stilius
+            </p>
+        </div>
+        <div> <!-- External CSS -->
+            <h1>External CSS - Išorinis CSS</h1>
+            <p>
+                <span class="padidintasTekstas"> Išorinis stilizavimas</span> naudojamas tvarkingai
+                ir teisingai stilizuojant elementus.
+            </p>
+            <p class="melynasTekstas raudonasTekstas">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Debitis possimus eveniet quod? Ducimus, inventore amet commodi earum sint porro voluptate!
+            </p>
+        </div>
+        <div> <!-- Konspektas-->
+            <div> <!-- CSS Rašymo būdai-->
+                <h1>CSS Rašymo būdai</h1>
+                <ul>
+                    <li>Inline - Linijinis rašomas tago viduje 
+                    naudojant style atributą</li>
+                    <li>Internal - Vidinis rašomas style tag'o viduje (head dalyje).</li>
+                    <li>External - Išorinis rašomas atskirame CSS faile, 
+                    kurį reikia prijungti prie HTML naudojant link tag'ą.</li>
+                </ul>
+            </div>
+        <div> <!-- CSS Selector'iai -->
+            <h1>CSS Selector'iai</h1>
+            <ul>
+                <li>element - parenkamas elementas pagal jo pavadinimą (p{})</li>
+                <li>id - sukuriamas susigalvotas id pavadinimas ir priskiriamas vienam elementui (#idPavadinimas{})</li>
+                <li>class - sukuriamas susigalvotas klasės pavadinimas ir 
+                    priskiriamas bet kokiam kiekiui elementų (.klasesVardas{})</li>
+            </ul>
+        </div>
+        <div> <!-- Stiliai -->
+            <h1>CSS Stiliai</h1>
+            <ul>
+                <li>color - skirtas pakeisti teksto spalvą (color: red)</li>
+                <li>font-size - skirtas pakeisti teksto dydį (font-size: 20px)</li>
+                <li>background-color - skirtas pakeisti fono spalvą (background-color: aqua)</li>
+                <li>font-family - skirtas pakeisti teksto šriftą (font-family:monospace)</li>
+                <li>font-weight - skirtas pakeisti teksto storumą (font-weight: bold)</li>
+                <li>line-height - skirtas pakeisti teksto eilutės aukštį (line-height: 20px)</li>
+                <li>border - skirtas nurodyti rėmelio nustatymus: storį+tipą+spalvą (border: 5px dashed black)</li>
+                <li>border-radius - skirtas apvalinti rėmelio kampus (border-radius: 10px)</li>
+                <li>text-align - skirtas lygiuoti tekstą (text-align: center)</li>
+                <li>font-style - skirtas suteikti tekstui stilių (font-stle: italic)</li>
+            </ul>
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color:azure;
+    height: 50px;
+}
+.logoImg{
+    width: auto;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.inlineBlockDisplay{
+    display: inline-block;
+}
+
+.menuListItem{
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.noDecor:hover{
+    color:green;
+}
+.noDecor{
+    text-decoration: none;
+}
+.menuDiv{
+    width: 30%;
+    float: right;
+}
+.menuList{
+    padding: 0;
+}
+.centruotasTekstas{
+    text-align: center;
+}
+.sriftas{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.fonoSpalva{
+    background-color:#12213a;
+}
+.baltasTekstas{
+    color:white;
+}
+.linijinisBlokinis{
+    display: inline-block;
+}
+.kvadratas{
+    height: 400px;
+    width: 700px;
+    background-color:white;
+    border: 3px dashed #12213a;
+}
+.pilkasTekstas{
+    color:grey
+}
+.margin1{
+    margin-right: 100px;
+}
+.padding1{
+    padding: 30px;
+}
+.marginVirsui{
+    margin: 100px;
+}
+html{
+    scroll-behavior: smooth;
+}
