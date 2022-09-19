@@ -7,3 +7,105 @@
 .italicIcon{
     font-style: italic;
 }
+
+/* mokinamės selector'ius */
+li{
+    font-size: 20px;
+}
+.klase0{
+    color:red;
+}
+#id0{
+    color:blue;
+}
+.class1.class2{
+    text-decoration: underline;
+}
+.class3 .class4{
+    text-decoration: line-through;
+}
+section.class3 *{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+h1, h3, h2{
+    text-align: center;
+}
+a:link{
+    color:blue;
+}
+a:visited{
+    color:purple;
+}
+a:active{
+    color:red;
+}
+li:hover{
+    background-color:burlywood;
+    color: orange;
+}
+
+.nth_lentele > table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto 50px;
+}
+.nth_lentele th, .nth_lentele td{
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* .nth_lentele tbody > tr:nth-child(3){
+    color:red;
+    background-color:rgb(107, 150, 150);
+} */
+
+/* 2n ir even lyginiai
+   2n + 1 - odd - nelyginiai 
+*/
+/* .nth_lentele tbody > tr:nth-child(2n){
+    color:red;
+    background-color:rgb(107, 150, 150);
+}
+
+.nth_lentele tbody > tr:nth-child(2n+1){
+    color:aqua;
+    background-color:rgb(150, 107, 138);
+} */
+
+/* .nth_lentele tbody > tr:nth-child(1n+3){
+    color:aqua;
+    background-color:rgb(150, 107, 138); */
+
+.nth_lentele td::after{
+    content: " :)";
+}
+
+td:hover::before,
+.row:hover::before { 
+   background-color: #ffa;
+   content: '';  
+   height: 100%;
+   left: -5000px;
+   position: relative;  
+   top: 0;
+   width: 10000px;   
+   z-index: -1;        
+}
+
+td:hover::after,
+.col:hover::after { 
+   background-color: #ffa;
+   content: '';  
+   height: 10000px;    
+   left: 0;
+   position: absolute;  
+   top: -5000px;
+   width: 100%;
+   z-index: -1;        
+}
+
+.nth_lentele tbody > tr:hover{
+    background-color: beige;
+}
