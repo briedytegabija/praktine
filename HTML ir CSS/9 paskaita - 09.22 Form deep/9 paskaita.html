@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS project</title>
+    <link rel="stylesheet" href="../9 paskaita - 09.22 Form deep/styles/9 paskaita.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>SEND US A MESSAGE</h1>
+      <form class="form mx-auto">
+        <input class="textInput" type="text" placeholder="Full name" />
+        <input class="textInput" type="email" placeholder="E-mail" />
+        <input class="textInput" type="tel" placeholder="Phone" />
+        <div class="mb-20">
+          <input type="checkbox" id="salygos" />
+          <label for="salygos">Terms and conditions</label>
+        </div>
+        <fieldset class="mb-20">
+          <legend>Fav color</legend>
+          <input type="radio" id="red" value="red" name="favColor" />
+          <label for="red">Red</label>
+          <input type="radio" id="green" value="green" name="favColor" />
+          <label for="green">Green</label>
+          <input type="radio" id="blue" value="blue" name="favColor" />
+          <label for="blue">Blue</label>
+        </fieldset>
+
+        <label for="bDay">Your b-day</label>
+        <input class="textInput" id="bDay" type="date" />
+
+        <input
+          class="textInput"
+          min="0"
+          max="10"
+          type="number"
+          step="0.1"
+          placeholder="Favorite number"
+        />
+
+        <!-- dropdown/select leisti pasirinkti jusu miesta, vilnius, kaunas, klaipeda, siauliai -->
+        <label for="town">Your town</label>
+        <select class="textInput" id="town">
+          <option selected>Please select town</option>
+          <option value="vilnius">Vilnius</option>
+          <option value="kaunas">Kaunas</option>
+          <option value="klaipeda">Klaipeda</option>
+          <option value="siauliai">Šiauliai</option>
+        </select>
+
+        <label for="avatar">Avatar image</label>
+        <input class="mb-20" type="file" id="avatar" multiple />
+
+        <textarea class="textInput" placeholder="Your message"></textarea>
+        <button class="submitBtn" type="submit">
+          <i class="fa fa-paper-plane-o" aria-hidden="true"></i> send
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 paskaita</title>
+    <link rel="stylesheet" href="../9 paskaita - 09.22 Form deep/styles/9 paskaita.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SEND US A MESSAGE</h1>
+        <form class="form">
+            <input class="textInput" type="text" placeholder="Full name"/>
+            <input class="textInput" type="email" placeholder="E-mail"/>
+            <input class="textInput" type="tel" placeholder="Phone"/>
+            <div>
+                <input type="checkbox" id="salygos" />
+                <label for="salygos">Terms and conditions</label>
+            </div>
+            <textarea class="textInput" placeholder="Your message"></textarea>
+            <button class="submitBtn" type="submit">
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Send</button>
+        </form>
+    </div>
+</body>
+</html> -->

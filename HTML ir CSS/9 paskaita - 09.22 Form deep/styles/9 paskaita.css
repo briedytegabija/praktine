@@ -1,0 +1,121 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import 'reset.css';
+
+.form {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form ::placeholder {
+  color: #bdbdd3;
+}
+
+.textInput {
+  width: 100%;
+  display: block;
+  border: none;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: width 0.2s ease-in;
+}
+
+.textInput:focus-visible {
+  outline: none;
+  width: 110%;
+}
+
+textarea.textInput {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submitBtn {
+  border: none;
+  line-height: 1.1;
+  padding: 15px 30px;
+  border-radius: 25px;
+  background-color: #827ffe;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: padding 0.3s ease-in-out, background-color 1s;
+  align-self: center;
+}
+.submitBtn:hover {
+  padding: 15px 45px;
+  background-color: #5655b9;
+}
+
+select.textInput {
+  color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+body {
+    background-color:rgb(206, 206, 206);
+}
+
+.form {
+    max-width: 300px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: ;
+}
+
+.form ::placeholder {
+    color:#bdbdd3;
+}
+
+.textInput {
+    width: 100%;
+    display: block;
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: #fff;
+    transition: width 0.2s ease-in;
+}
+
+.textInput:focus-visible {
+    outline: none;
+    padding: 10px 25px;
+}
+
+textarea.textInput {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.submitBtn {
+    border: none;
+    line-height: 1.1;
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: #827ffe;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.submitBtn:hover {
+    padding: 15px 45px;
+    background-color: rgb(156, 32, 201);
+} */

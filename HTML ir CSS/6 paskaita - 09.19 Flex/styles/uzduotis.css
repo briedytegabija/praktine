@@ -1,0 +1,108 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+
+header{
+    height: 50px;
+    /* background-color:antiquewhite; */
+    /* background: rgba(0, 151, 19, 0.1); */
+    background: url(../images/headerBackground.PNG);
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainMenu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.mainMenu > ul{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainMenu li{
+    list-style-type: none;
+}
+
+.mainMenu a{
+    text-decoration: none;
+} 
+
+.logoImg{
+    width: auto;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+.juodasTekstas{
+    color:black;
+}
+
+.sriftas{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* .plotis{
+    width: 100%;
+} */
+
+.bigFlexTask{
+    display: flex;
+    flex-wrap: warp;
+    gap: 10px;
+}
+.bigTaskContainer{
+    width: 2010px;
+    height: 1000px;
+    /* border: 1px solid black; */
+    border: none;
+}
+.taskBg{
+    background-image: url(../images/bags1PNG.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.w50{
+    width: 50%;
+}
+
+.w33{
+    width: 33%;
+}
+
+.h33{
+    height: 33%;
+}
+
+.h66{
+    height: 66%;
+}
+.h50{
+    height: 50%;
+}
+.containerTask1{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.containerTask1NextLevel{
+    display: flex;
+    gap: 1px;
+}
+
+.fonoSpalva{
+    background-color:#F7F2EB;
+}
+
+.fonoPaveiksliukas{
+    background-image: url(../images/bags2.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

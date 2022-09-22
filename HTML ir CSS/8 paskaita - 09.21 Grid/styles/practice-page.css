@@ -1,0 +1,274 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+* {
+    box-sizing: border-box; 
+}
+
+/* ourTeam */
+
+.ourTeam {
+    padding: 3% 20px;
+    text-align: center;
+}
+
+.teamItem {
+    /* border: 1px solid black; */
+    text-align: center;
+    /* min-width: 120px; */
+}
+
+.teamItem img {
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.teamItem img:hover {
+    opacity: 0.75;
+}
+
+.teamName {
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.teamPosition {
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.teamGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Our work */
+
+.ourWork {
+    padding: 3% 20px;
+    text-align: center;
+    background-color: rgb(54, 54, 54);
+    font-size: 25px;
+}
+
+.customerItem {
+    min-width: 100px;
+    min-height: 50px;
+    font-weight: normal;
+    color: black;
+    background-color: white;
+    margin-left: 20px;
+}
+
+.customer {
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.ourWorkGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+h5 {
+    font-weight: normal;
+}
+
+/* PRICING */
+
+.pricing { 
+    padding: 3% 20px;
+    text-align: center;
+    background-color: white;
+    font-size: 18px;
+}
+
+.pricingItem {
+    min-width: 100px;
+    min-height: 50px;
+    font-weight: normal;
+    color: black;
+    background-color: white;
+    margin-left: 20px;
+    border: 1px solid gray;
+}
+
+.pricingItem:hover {
+    box-shadow: 0px 8px 10px grey;
+}
+
+.pricingGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+}
+
+.pricingPlan {
+    background-color: rgb(85, 83, 83);
+    color: white;
+    margin: 0;
+    padding: 30px;
+}
+
+.mygtukas {
+    background-color: rgb(59, 136, 107);
+    color:white;
+    border: none;
+    padding: 18px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 10px 2px; */
+    margin-bottom: 12px;
+    border-radius: 2px;
+}
+
+/* Contact Us skiltis */
+
+.Contactus {
+        padding: 3% 20px;
+        /* text-align: center; */
+        background-color: white;
+        font-size: 18px;
+}
+
+.ContactUsGrid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    color: black;
+}
+
+.pabraukimas {
+    text-decoration: underline rgb(59, 136, 107) 5pt;
+}
+
+.laiskas {
+    background-color: #fff;
+    box-shadow: 0px 8px 10px grey;
+    margin-top: 20px;
+}
+
+.vardas {
+    border-bottom: 1px solid grey;
+    padding: 20px 20px;
+
+}
+
+.email {
+    border-bottom: 1px solid grey;
+    padding: 20px 20px;
+}
+
+.message {
+    border-bottom: 1px solid grey;
+    padding: 20px 20px;
+}
+
+.input {
+    border: none;
+}
+
+.buttonStyle {
+    background-color: black;
+    color:white;
+    border: none;
+    padding: 10px 20px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 10px 2px; */
+    margin: 12px 12px;
+    /* border-radius: 2px; */
+}
+
+/* .nustatymai {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+.nustatymai {
+    display: inline-block;
+}
+
+.mygtuko {
+    margin-left: 700px;
+}
+
+.likeIt {
+    margin-left: 20px;
+}
+
+/* BANDYMAS */
+
+.kvadratelis {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .kvadratelis input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: solid black 1pt;
+  }
+
+  .kvadratelis input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .kvadratelis input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .kvadratelis .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

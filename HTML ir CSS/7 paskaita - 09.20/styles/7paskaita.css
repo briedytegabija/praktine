@@ -1,0 +1,255 @@
+
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+/* Reset ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* laikinai kol dirbam: */
+    margin-bottom: 1000px;
+}
+
+/* Common css */
+
+.container {
+    max-width: 800px;
+    /* border: 1px dashed #000; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Helper CSS */
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 15px; */
+  /* position: fixed;
+  width: 100%; */
+  background-color:white;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 4px 11px 0px rgb(135, 133, 133);
+}
+
+.logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.logo span {
+    font-weight: normal;
+}
+
+.navLink {
+    padding: 10px 20px;
+    /* border: 1px solid black; */
+}
+
+.mainHeader a {
+    letter-spacing: 4px;
+}
+
+.mainHeader a:hover {
+    background-color:rgb(197, 192, 192);
+}
+
+/* HERO */
+
+.hero {
+     
+    /* background-color: coral; */
+    min-height: 100vh;
+    background: url(../images/architect.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.heroTitle {
+    color:white;
+    font-size: 40px;
+}
+
+.heroTitle span {
+    font-weight: normal;
+    color: white;
+}
+
+/* Projects */
+
+.projects {
+    padding: 50px 30px;
+}
+
+.hr {
+    height: 1px;
+    margin-bottom: 20px;
+    background-color:#a2c0be;
+}
+
+.project {
+    position: relative;
+    /* border: 1px dashed black; */
+    flex-basis: 20%;
+    flex-grow: 1;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.prTitle {
+    color:white;
+    background-color: black;
+    padding: 5px 10px;
+    font-weight: normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+/* About */
+
+.aboutTekstas {
+    padding: 10px 30px;
+}
+
+/* Contact kortelės */
+
+.kortelesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    /* position: relative;
+    flex-basis: 20%;
+    flex-grow: 1; */
+}
+
+.korteles {
+    position: relative;
+    /* border: 1px dashed black; */
+    flex-basis: 5%;
+    flex-grow: 1;
+}
+
+.kortelesMygtukas {
+  background-color:rgb(233, 233, 233);
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  /* border-radius: 12px; */
+}
+
+/* Contact */
+
+.formContainer {
+    background-color:#a2c0be;
+    max-width: 400px;
+    min-height: 500px;
+    padding: 20px 30px;
+}
+
+.input {
+    display: block;
+    gap: 16px;
+    padding: 5px 7px;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* flex container */
+.contactForm {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-weight: normal;
+    color:grey;
+}
+
+/* flex item */
+.inputBlock {
+    /* flex-basis: 47%; */
+}
+
+.half {
+    flex-basis: 47%;
+}
+
+.full {
+    flex-basis: 100%;
+}
+
+.textarea {
+    resize: vertical;
+}
+
+.buttonStyle {
+  background-color:rgb(73, 73, 73);
+  border: none;
+  color: white;
+  padding: 18px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 42px;
+}
+
+.h2 {
+    color:grey;
+    font-weight: normal;
+}
+
+/* Contact Us */
+
+.contactUsContainer {
+    background-color:#A8B1B8;
+    max-width: 400px;
+    min-height: 500px;
+    padding: 20px 60px;
+    text-align: center;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tarpai {
+    margin-top: 20px;
+}
