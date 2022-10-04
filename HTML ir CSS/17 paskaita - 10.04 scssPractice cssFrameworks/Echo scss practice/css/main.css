@@ -1,3 +1,18 @@
 body {
   font-family: "Monserrat", sans-serif;
+}
+
+.btn, .btn--outline {
+  border: none;
+  padding: 0.8em 1.5em;
+  background-color: #081158;
+  color: white;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: 1px solid #081158;
+}
+
+.btn--outline {
+  background: transparent;
+  color: #081158;
 }/*# sourceMappingURL=main.css.map */
