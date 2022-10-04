@@ -1,0 +1,196 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+/* variables */
+
+html {
+    --main-color: #007bff;
+    --main-dark-color: #333;
+    --text-dark-color: #999;
+}
+
+/* Global styles */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'poppins';
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+p {
+    font-weight: 300;
+    color: #777777;
+}
+
+/* Main header */
+
+.main-header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.main-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-nav {
+    font-size: 1.5rem;
+}
+
+.btn {
+    border: none;
+    border-radius: none;
+    background-image: linear-gradient(to top right, #6156cc, #2ea4d3);
+    padding: 0.6em 1.3em;
+    transition: background-color 0.2s;
+    color: #fff;
+}
+
+/* About me sekcija */
+
+.philip-container {
+    display: grid;
+    gap: 5rem;
+}
+
+.philip__image {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    padding-top: 2em;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+/* service sekcija */
+
+.service-intro {
+    padding-top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+}
+
+.service-card {
+    padding: 2em 2em;
+    text-align: center;
+}
+
+.ikonele {
+    font-size: 32px;
+}
+
+/* Numbers sekcija */
+
+.numbers-background {
+    background-image: linear-gradient(to top right, #6156cc, #2ea4d3);
+}
+
+.numbers-container {
+    color: white;
+}
+
+.numbers-container p {
+    color: white;
+}
+
+.numbers-grid {
+    display: grid;
+    text-align: center;
+}
+
+/* footer */
+
+.footer-container {
+    padding-top: 6em;
+    padding-bottom: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #04091e;
+}
+
+.footer-container h3 {
+    color: white;
+}
+
+.footer__form input {
+    border-radius: 0;
+    background-color: white;
+    border: 1px solid #fff;
+    flex-grow: 1;
+    padding: 0.6em;
+    color: #fff;
+}
+
+.footer__form button {
+    border-radius: 0;
+    border-color: none;
+    background-color: rgb(64, 124, 192);
+    padding: 0.6em 0.6em;
+}
+
+button span {
+    color: white;
+}
+
+.footer__icons .fa {
+    color: white;
+}
+
+/* RESPONSIVENESS======================== */
+/* TABLET ====================== */
+@media screen and (min-width: 600px) {
+
+    /* hero ir about me */
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+        justify-content: center;
+        align-items: center;*/
+        padding: 5em 1em;
+    }
+
+    /* services */
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+
+    /* numbers */
+    .numbers-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    /* footer */
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+}

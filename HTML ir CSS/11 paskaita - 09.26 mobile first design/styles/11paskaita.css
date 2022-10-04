@@ -1,0 +1,71 @@
+@import 'reset.css';
+
+html {
+    font-size: 100%;
+}
+
+.post {
+    margin-bottom: 1rem;
+}
+
+.post p {
+    font-size: 16px;
+}
+
+.post h3 {
+    font-size: 1.4rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    /* tablet taisykles */
+
+    html {
+        font-size: 120%;
+    }
+
+    .post {
+        margin-bottom: 0;
+    }
+
+    .post_1 {
+        grid-area: one;
+    }
+
+    .post_2 {
+        grid-area: two;
+    }
+
+    .post_3 {
+        grid-area: three;
+    }
+
+    .post_4 {
+        grid-area: four;
+    }
+
+    .posts {
+        display: grid;
+        gap: 1.6rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            'one one one one'
+            'two two three four'
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* PC screen */
+
+    html {
+        font-size: 145%;
+    }
+
+    .posts {
+        grid-template-areas:
+            'one one two two'
+            'one one three four';
+    }
+}

@@ -1,0 +1,189 @@
+@use 'reset';
+@use 'vars';
+@use 'common';
+
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+
+body {
+    font-family: 'Popins', sans-serif;
+}
+
+// latest news
+
+.late-news {
+    background-color: #333;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    .container>.btn {
+        margin-bottom: 2rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .news__title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .news__subtitle {
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .news-posts {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .single-post {
+        display: flex;
+        flex-direction: column;
+
+        &__description {
+            background-color: #fff;
+            color:#333;
+            padding: 1rem;
+        }
+
+        &__title {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        &__short {
+            margin-bottom: 2rem;
+        }
+
+        &__link {
+            color: var(--main-color);
+        }
+    }
+}
+
+// COunters
+.counters {
+    padding: 2rem 0;
+    background-color: orange;
+    background: url('../img/count-bg.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 2em auto;
+    }
+
+    .numbers-container {
+        color: #fff;
+        padding-left: 3em;
+        padding-right: 3em;
+        font-weight: 700;
+    }
+
+    .counters__title {
+        font-size: 5rem;
+        margin: 0;
+    }
+    .counters__subtitle {
+        margin: 0;
+    }
+
+  }
+
+// OUR TEAM
+
+.our-team {
+    .team-intro {
+        padding: 3em 1em;
+    }
+
+    .team-title {
+        text-align: center;
+        font-weight: 700; //kodėl neveikia?
+        font-size: 2.5rem;
+        margin: 0.2em;
+    }
+
+    .team-subtitle {
+        text-align: center;
+        color: grey;
+        line-height: 1.5;
+    }
+
+    .team-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2em 1em;
+    }
+
+    .team-card__name {
+        margin: 0.3em auto;
+        font-weight: 900;
+        color: #333;
+    }
+
+    .team-card__occupation {
+        color: tomato;  //kodėl neveikia?
+    }
+
+    .team-member-photo {
+        /* border: 1px solid black; */
+        text-align: center;
+    }
+    
+    .team-card__image {
+        border-radius: 50%;
+        // transition: all 0.2s;
+    }
+
+    .social-link {
+        border-radius: 50%;
+        transition: all 0.2s;
+        border: solid 1px tomato;
+        color: tomato;
+        font-size: 0.8rem;
+        padding: 0.4em 0.4em;
+    }
+}
+
+// CONTACT
+
+.contact {
+    .contact-title {
+        text-align: center;
+        font-weight: 900;
+        color: #333;
+        font-size: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .contact-container {
+        margin-bottom: 3em;
+        padding-left: 1em;
+    }
+
+    .team-info {
+        color: orange;
+    }
+
+    .contact-more-info {
+        color: grey; //kodėl neveikia?
+    }
+
+    .social-link {
+        padding: 0.3em 0.3em;
+        color: grey;
+    }
+}
+
+
+@import 'media';

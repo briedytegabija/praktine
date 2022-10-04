@@ -1,0 +1,33 @@
+@import 'reset.css';
+
+
+
+/* @media screen and (min-width: 400px) {
+*/
+
+html {
+    font-size: 100%;
+}
+
+.hero {
+    padding: 1rem;
+}
+
+.btn {}
+
+.antra_sekcija {
+    padding: 1rem;
+}
+
+.dezute1 {
+    position: absolute;
+}
+
+.antra_sekcija_title {
+    position: relative;
+    text-align: center;
+}
+
+.antra-sekcija_subTitle {
+    position: relative;
+}

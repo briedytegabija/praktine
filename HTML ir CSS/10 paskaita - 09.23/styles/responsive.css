@@ -1,0 +1,80 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import 'reset.css';
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.post {
+    /* height: 150px; */
+    background-color: white;
+    border: none;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    border-radius: 22px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.gridItem1 {
+    grid-column: 1 / span 2;
+}
+
+.gridItem2 {
+    grid-column: 3 / 4;
+}
+
+.gridItem3 {
+    grid-row: 2 / 3;
+}
+
+.gridItem4 {
+    grid-column: 2 / 4;
+}
+
+
+/* Tablet screen */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+
+    /* cia parasyto taisykles galioja nuo 768 ir daugiau */
+    .gridContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gridItem1 {
+        grid-column: 1 / 4;
+    }
+
+    .gridItem2 {
+        grid-row: 2 / 3;
+    }
+
+    .gridItem3 {
+        grid-row: 2 / 3;
+    }
+
+    .gridItem4 {
+        grid-column: span 3;
+    }
+}
+
+
+
+/* Mobile view */
+@media screen and (max-width: 375px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .post {
+        grid-column: span 1;
+    }
+}

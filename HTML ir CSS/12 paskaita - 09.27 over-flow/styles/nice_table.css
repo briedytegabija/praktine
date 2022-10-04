@@ -1,0 +1,121 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import 'reset.css';
+
+.tableContainer {
+    min-height: 100vh;
+    background-image: linear-gradient(to top right, #6156cc, #c550c0);
+    display: grid;
+    place-items: center;
+}
+
+.mainTable {
+    width: 950px;
+    border-collapse: collapse;
+    border-radius: 15px;
+    /* reikalinga kad suveiktu uzapvalinimas */
+    overflow: hidden;
+}
+
+thead th {
+    color: #fff;
+    background-color: #333;
+    padding: 0.5em 0;
+    font-weight: normal;
+}
+
+.mainTable td {
+    padding: 0.5em 1.5em;
+    color: gray;
+}
+
+.mainTable tbody tr {
+    background-color: white;
+    transition: all 0.2s;
+}
+
+.mainTable tbody tr:nth-child(even) {
+    background-color: rgb(233, 233, 233);
+}
+
+.mainTable tbody tr:hover {
+    background-color: rgb(141, 141, 141);
+}
+
+.mainTable tbody tr:hover td {
+    color: white;
+}
+
+/* 
+  kaireje yra #c550c0
+  desineje #c550c0
+  */
+
+/* HEADER  */
+
+.logo {
+    margin-bottom: 0;
+    padding: 0.3em 0;
+}
+
+.mainHeader .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainNav>ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.unlisted {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.navLink {
+    padding: 0.5em 1.2em;
+    background-color: rgb(247, 251, 254);
+}
+
+.navLink:hover {
+    background-color: aliceblue;
+}
+
+/* HOVER sub menu */
+
+.hasSubMenu {
+    position: relative;
+}
+
+.hasSubMenu::after {
+    content: '\f078';
+    font-family: 'FontAwesome';
+    font-size: small;
+}
+
+.hasSubMenu:hover::after {
+    transform: rotate(180deg);
+}
+
+.hasSubMenu:hover .subMenu {
+    /* display: block; */
+    transform: scaleY(1) translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.subMenu {
+    /* display: none; */
+    transform: scaleY(0);
+    transform-origin: top;
+    /* transform: translateX(500px); */
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 1.2s, opacity 2.4s;
+    position: absolute;
+    min-width: 140px;
+    left: 0;
+    top: 100%;
+}

@@ -1,0 +1,27 @@
+@import 'reset.css';
+/* card klase ateina is reseto */
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: auto 30%;
+    gap: 20px;
+}
+
+aside {
+    max-height: 300px;
+    background-color: red;
+    border: solid 1px black;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
+}
+
+aside.card {
+    background-color: #333;
+    color: snow;
+    height: 300px;
+}
+
+body {
+    /* sustabdo dokumento scrollinima */
+    /* overflow: hidden; */
+}

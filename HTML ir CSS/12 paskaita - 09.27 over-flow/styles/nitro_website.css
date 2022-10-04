@@ -1,0 +1,336 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+/* @import 'reset.css'; */
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* header */
+.header1 {
+    background-color: grey;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    /* opacity: 0.5; */
+}
+
+.logo {
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Nav menu */
+.nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #333;
+    overflow: hidden;
+
+}
+
+.menu a {
+    display: block;
+    padding: 30px;
+    color: white;
+}
+
+.menu a:hover {
+    background-color: grey;
+}
+
+.nav {
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/* Menu Icon */
+.hamburger {
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+/* Style label tag */
+
+.hamburger_line {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+}
+
+/* Style span tag */
+
+.hamburger_line::before,
+.hamburger_line::after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamburger_line::before {
+    top: 5px;
+}
+
+.hamburger_line::after {
+    top: -5px;
+}
+
+/* hides the checkbox: */
+.side_menu {
+    display: none;
+}
+
+.side_menu:checked~nav {
+    max-height: 100%;
+}
+
+.side_menu:checked~.hamburger .hamburger_line {
+    background: transparent;
+}
+
+.side_menu:checked~.hamburger .hamburger_line::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.side_menu:checked~.hamburger .hamburger_line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.buttonStyle {
+    background-color: rgb(0, 125, 228);
+    border: none;
+    color: white;
+    padding: 1em 1.8em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 42px;
+}
+
+.izanga {
+    text-align: center;
+    min-height: 100vh;
+    background: url(../img/architect.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 7em;
+    color: white;
+}
+
+/* img {
+    filter: grayscale(100%);
+} */
+
+.buttonStyle:hover {
+    background-color: black;
+}
+
+.aboutUs {
+    color: rgb(0, 101, 216);
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.moters_pav {
+    position: relative;
+    flex-grow: 1;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.moters_pav img {
+    max-width: 100%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+/* h4 i:: before {
+    content: url()
+} */
+h4::before {
+    content: '\f078';
+    font-family: 'FontAwesome';
+    font-size: small;
+    color: green;
+    font-size: 0.8rem;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    padding: 1rem;
+    border: none;
+    background-color: white;
+}
+
+
+
+/* Responsiveness */
+@media (min-width: 768px) {
+    .nav {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+    }
+
+    .menu li {
+        float: left;
+    }
+
+    .menu a:hover {
+        background-color: transparent;
+        color: gray;
+
+    }
+
+    /* paslepia hamburger ikonele: */
+    .hamburger {
+        display: none;
+    }
+
+    .bigTaskContainer {
+        height: 100vh;
+        max-width: 100%;
+        padding: 5em 5em;
+    }
+
+    .antra_uzduotis {
+        display: flex;
+        flex-direction: row;
+        gap: 1px;
+    }
+
+    .containerTask2Level2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .w66 {
+        width: 66%;
+    }
+
+    .w25 {
+        width: 25%;
+    }
+
+    .h33 {
+        height: 33%;
+    }
+
+    .h66 {
+        height: 66%;
+    }
+
+    .h25 {
+        height: 25%;
+    }
+
+    .bottles {
+        background-image: url(../img/bottles.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .mosaic {
+        background-image: url(../img/mosaic.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bluechair {
+        background-image: url(../img/bluechair.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .airpods {
+        background-image: url(../img/airpods.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .watermelon {
+        background-image: url(../img/watermelon.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .leaf {
+        background-image: url(../img/leaf.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .man {
+        background-image: url(../img/man.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .oats {
+        background-image: url(../img/oats.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .pillow {
+        background-image: url(../img/pillow.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .dog {
+        background-image: url(../img/dog.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .chair {
+        background-image: url(../img/chair.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

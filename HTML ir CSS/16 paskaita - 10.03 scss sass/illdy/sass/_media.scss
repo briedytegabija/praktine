@@ -1,0 +1,38 @@
+@media screen and (min-width: 600px) {
+    .late-news {
+        .news-posts {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .late-news {
+        .news-posts {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .counters {
+        .container-flex {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .numbers-container {
+            border-right: solid white 2px;
+            &:last-child {
+                border-right: none;
+            }            
+        }
+
+    }
+
+    // our team
+    .team-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+}

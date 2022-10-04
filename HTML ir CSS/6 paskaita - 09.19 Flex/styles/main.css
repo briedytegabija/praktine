@@ -1,14 +1,14 @@
-.kvadratas{
+.kvadratas {
     width: 100px;
     height: 100px;
-    background-color:blue;
+    background-color: blue;
     border: 5px solid black;
     text-align: center;
     line-height: 100px;
     font-size: 26px;
 }
 
-.flexContainer{
+.flexContainer {
     height: 500px;
     overflow: hidden;
     display: flex;
@@ -20,47 +20,47 @@
     align-content: flex-start;
     align-items: flex-start;
     gap: 10px 20px;
-}   
+}
 
-.flexPirmas{
+.flexPirmas {
     order: 1;
 }
 
-.flexAntras{
+.flexAntras {
     order: 2;
 }
 
-.flexTrecias{
+.flexTrecias {
     order: 3;
 }
 
-.flexKetvirtas{
+.flexKetvirtas {
     order: 4;
 }
 
-.alignSelfEnd{
+.alignSelfEnd {
     align-self: flex-end;
 }
 
 /* Pratimai */
 
-.pirmasPratimas{
+.pirmasPratimas {
     display: flex;
     gap: 30px;
 }
 
-.flexInFlex{
+.flexInFlex {
     display: flex;
     gap: 30px;
     flex-direction: column;
 }
 
-.flexInFlexInFlex{
+.flexInFlexInFlex {
     display: flex;
     gap: 30px;
 }
 
-.kvadratai{
+.kvadratai {
     background-color: orange;
     display: flex;
     justify-content: center;
@@ -68,59 +68,63 @@
     font-size: 30px;
 }
 
-.pirmasKvadratas{
+.pirmasKvadratas {
     width: 330px;
     height: 230px;
 }
-.antrasKvadratas{
+
+.antrasKvadratas {
     width: 330px;
     height: 100px;
 }
-.treciasKvadratas{
+
+.treciasKvadratas {
     width: 150px;
     height: 100px;
 }
-.ketvirtasKvadratas{
+
+.ketvirtasKvadratas {
     width: 150px;
     height: 100px;
 }
 
 /* BIG FLEX TASK */
 /* Task 1 */
-.bigFlexTask{
+.bigFlexTask {
     display: flex;
     flex-wrap: warp;
     gap: 10px;
 }
 
-.bigTaskContainer{
+.bigTaskContainer {
     width: 300px;
     height: 300px;
     border: 1px solid black;
 }
 
-.taskBg{
+.taskBg {
     background-image: url(../images/lake-como.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.w66{
+.w66 {
     width: 66%;
 }
 
-.w33{
+.w33 {
     width: 33%;
 }
 
-.h33{
+.h33 {
     height: 33%;
 }
 
-.h66{
+.h66 {
     height: 66%;
 }
-.h50{
+
+.h50 {
     height: 50%;
 }
 
@@ -138,31 +142,43 @@
     gap: 1px;
 } */
 
-.containerTask1{
+.containerTask1 {
     display: flex;
     flex-direction: column;
     gap: 1px;
 }
 
-.containerTask1NextLevel{
+.containerTask1NextLevel {
     display: flex;
     gap: 1px;
 }
 
 /* task 2 (trečias paveiksliukas */
-.containerTask2{
+.containerTask2 {
     display: flex;
     flex-direction: column;
     gap: 1px;
 }
 
-.containerTask2Level1{
+.containerTask2Level1 {
     display: flex;
     gap: 1px;
 }
 
-.containerTask2Level2{
+.containerTask2Level2 {
     display: flex;
     flex-direction: column;
     gap: 1px;
+}
+
+/* Antra užduotis */
+
+.antra_uzduotis {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+
+.w100 {
+    width: 100%;
 }
