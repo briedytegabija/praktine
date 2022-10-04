@@ -1,7 +1,18 @@
 @use 'vars' as v;
 
 body {
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    color: transparentize(black, 0.5);
+    color: #00000050;
+    font-size: 14px;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .btn {
@@ -33,7 +44,9 @@ body {
 }
 
 .header-title {
+    font-family: 'Monserrat', sans-serif;
     color: v.$primary-color;
     font-size: 2rem;
     margin-bottom: 0.5em;
 }
+

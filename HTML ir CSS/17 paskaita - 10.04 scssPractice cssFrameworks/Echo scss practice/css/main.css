@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -48,7 +49,18 @@ p {
 }
 
 body {
-  font-family: "Monserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.3137254902);
+  font-size: 14px;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .btn, .btn--outline {
@@ -78,7 +90,23 @@ body {
 }
 
 .header-title {
+  font-family: "Monserrat", sans-serif;
   color: #081158;
   font-size: 2rem;
   margin-bottom: 0.5em;
+}
+
+.hero {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.hero .hero__text {
+  margin-bottom: 2rem;
+}
+.hero button {
+  margin-bottom: 1.5rem;
+}
+
+.features {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
