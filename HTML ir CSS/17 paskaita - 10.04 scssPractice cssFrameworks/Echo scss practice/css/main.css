@@ -109,4 +109,34 @@ p {
 
 .features {
   text-align: center;
+}
+.features .features-card__icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+  position: relative;
+  margin-top: 0.4em;
+}
+.features .features-card__icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(251, 178, 68, 0.5);
+  left: 50%;
+  top: -6px;
+}
+.features .features-card__title {
+  margin-bottom: 0.2em;
+}
+
+.agency {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.agency .hero-list {
+  list-style-type: none;
+}
+.agency .hero-list__item::before {
+  content: "f00c";
 }/*# sourceMappingURL=main.css.map */

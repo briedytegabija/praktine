@@ -1,4 +1,5 @@
 @use 'reset';
+@use 'vars' as v;
 @use 'common';
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
@@ -17,8 +18,49 @@
     }
 }
 
-// our features
+// our features ---------
 
 .features {
     text-align: center;
+
+    .features-card {
+        &__icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5em;
+            position: relative;
+            margin-top: 0.4em;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: transparentize(v.$secondary-color, 0.5);
+                left: 50%;
+                top: -6px;
+            }
+        }
+        &__title {
+            margin-bottom: 0.2em;
+        }
+    }
 }
+
+
+// why our agency?
+
+.agency {
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+    .hero-list {
+        list-style-type: none;
+
+        &__item::before {
+            content: 'f00c';
+        }
+    }
+}
+
+// media queries
+@import 'media';
